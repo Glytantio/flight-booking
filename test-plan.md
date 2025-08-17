@@ -5,7 +5,7 @@ This document defines the testing scope, objectives, and approach for the **Flig
 The system was developed as part of an **academic capstone project** and is intended for **training purposes only**.  
 
 It is **not a real-world flight booking service**.  
-The system is limited to **local flights in the Philippines**, and schedules are retrieved through **third-party APIs** for realism.
+The system is limited to **local flights in the Philippines**, retrieves schedules through **third-party APIs**, and includes **simulated payment services** to make the experience more realistic.
 
 ---
 
@@ -15,10 +15,11 @@ The system is limited to **local flights in the Philippines**, and schedules are
 - Local flights within the Philippines
 - Flight search, booking, ticket generation, and cancellation
 - Retrieval of **flight schedules from third-party APIs**
+- **Simulated payment services** (mock card details, training-only)
 
 ### Out-of-Scope
 - International flights
-- Payment processing or payment simulation
+- Real-world payment processing or gateway integration
 - Airline backend systems outside the training environment
 
 ---
@@ -26,17 +27,19 @@ The system is limited to **local flights in the Philippines**, and schedules are
 ## 3. Objectives
 - Verify that users can **search, book, and manage local flights**.
 - Ensure accurate retrieval of flight schedules via APIs.
-- Validate correct error handling for invalid inputs and unavailable flights.
-- Confirm that cancellation and refund logic works within defined limits.
+- Validate correct handling of simulated payments (success, failure, retry, cancel).
+- Confirm cancellation and refund behavior.
+- Test negative and edge cases to ensure robustness.
 
 ---
 
 ## 4. Test Strategy
-- **Manual Testing**: Primary method using test cases in Markdown.
+- **Manual Testing**: Primary method using Markdown-based test cases.
 - **Functional Testing**: Verify that each feature behaves as expected.
-- **Negative Testing**: Validate how the system handles invalid or unexpected input.
-- **Regression Testing**: Ensure that updates don’t break existing functionality.
-- **API Testing**: Check data consistency and error handling from schedule APIs.
+- **Negative Testing**: Validate system response to invalid or unexpected inputs.
+- **Regression Testing**: Ensure updates don’t break existing functionality.
+- **API Testing**: Verify schedule data retrieval and error handling.
+- **Payment Simulation Testing**: Validate transaction scenarios using mock data.
 
 ---
 
@@ -44,6 +47,7 @@ The system is limited to **local flights in the Philippines**, and schedules are
 - **Browsers**: Chrome, Firefox  
 - **Operating Systems**: Windows 10, Linux (Ubuntu)  
 - **Data Source**: Third-party APIs (flight schedules only, local flights)  
+- **Payment Simulation**: Mock payment services (training-only, no real transactions)  
 
 ---
 
@@ -55,11 +59,12 @@ The system is limited to **local flights in the Philippines**, and schedules are
 ---
 
 ## 7. Risks & Mitigation
-- **API downtime or unavailability** → Add mock test data for fallback.  
-- **Incomplete data for certain local routes** → Validate system behavior when schedules are missing.  
-- **No payment simulation** → Focus test cases on booking and schedule-related functionality.  
+- **API downtime or unavailability** → Use mock test data as fallback.  
+- **Incomplete data for certain local routes** → Validate system behavior with missing schedules.  
+- **Payment simulation issues** → Ensure clear messages are displayed; no real financial risk.  
+- **Scope confusion (academic vs real-world)** → Explicit disclaimers in all documentation.  
 
 ---
 
 ## 8. Approval
-This test plan is prepared for **academic and training use** only, as part of the Flight Booking System capstone project.
+This test plan is prepared for **academic and training use only**, as part of the Flight Booking System capstone project.
