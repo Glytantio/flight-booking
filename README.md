@@ -1,5 +1,5 @@
 > ⚠️ **Disclaimer:**  
-> This Flight Booking System was developed as a **capstone project for academic and training purposes only**.  
+> This Flight Booking Training System was developed as a **capstone project for academic and training purposes only**.  
 > It is **not an actual flight booking service**, and all data is limited to **local flights within the Philippines** using simulated and API-provided schedules.
 
 # Flight Booking Training System (Capstone Project)
