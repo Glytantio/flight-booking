@@ -8,13 +8,17 @@
 
 ---
 
-## 📌 Contents
-- `test-plan.md` → Defines the testing scope, objectives, and strategy  
-- `manual-test-cases.md` → Detailed manual test cases (search, booking, payments, cancellations, APIs, edge cases)  
-- `automation/` → Placeholder for automated test scripts (future work)  
-- `docs/` → Diagrams, workflows, and supporting documentation  
+## 📌 Repository Links
+- 📄 [Test Plan](./test-plan.md)  
+- 📝 [Manual Test Cases](./manual-test-cases.md)  
+- 📂 [Automation Placeholder](./automation/README.md) *(future work)*  
+- 📊 [Docs (Diagrams & Flows)](./docs/)  
 
 ---
+
+## 📌 External Links
+- 👨‍💻 [My Portfolio](glytantio.github.io)  
+- 💼 [LinkedIn Profile](https://www.linkedin.com/in/glytantio)
 
 ## 🛠 Tools & Techniques
 - Manual Testing (Markdown format)  
