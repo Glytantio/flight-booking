@@ -22,7 +22,7 @@ The focus is on **QA** such as test plans, manual test cases, and test design te
 ## 🚀 Features Covered
 - Flight Search
 - Flight Booking
-- Payment Processing
+- Payment Processing (simulated, **not actual payments**)
 - Ticket Generation
 - Cancellation & Refunds
 
