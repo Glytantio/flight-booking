@@ -17,7 +17,7 @@
 ---
 
 ## 📌 External Links
-- 👨‍💻 [My Portfolio](glytantio.github.io)  
+- 👨‍💻 [My Portfolio](https://www.glytantio.github.io)  
 - 💼 [LinkedIn Profile](https://www.linkedin.com/in/glytantio)
 
 ## 🛠 Tools & Techniques
