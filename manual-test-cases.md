@@ -3,9 +3,8 @@
 > **Note:**  
 > The Flight Booking System was developed as a **capstone project** for **academic and training purposes only**.  
 > It is **not an actual flight booking service**.  
-> The system supports **local flights within the Philippines only**, and integrates with third-party APIs for **flight schedules**.  
-> International routes are **not included**.
-> Payment services are **simulated**.
+> The system supports **local flights within the Philippines only**, integrates with **third-party APIs for flight schedules**, and includes **simulated payment services**.  
+> International routes and real-world payment gateways are **not supported**.
 
 ---
 
@@ -41,11 +40,21 @@
 |---------|----------------------|--------------|-------|-----------------|
 | CR-01   | Cancel valid booking | User has a confirmed ticket | Select booking → Cancel | System cancels booking and marks ticket as void |
 | CR-02   | Cancel already-cancelled booking | User has a cancelled ticket | Try to cancel again | System displays “Booking already cancelled” |
-| CR-03   | Refund process check (training simulation only) | User has a cancelled booking | Request refund | System confirms refund request (simulation only, no real payment) |
+| CR-03   | Refund process check (simulated only) | User has a cancelled booking | Request refund | System confirms refund request (no actual money processed) |
 
 ---
 
-## 5. API Integration (Flight Schedules)
+## 5. Payment (Simulated Services)
+| Test ID | Test Case Description | Precondition | Steps | Expected Result |
+|---------|----------------------|--------------|-------|-----------------|
+| PM-01   | Successful simulated payment | User on payment page | Enter valid mock card details and confirm | Payment succeeds, booking confirmed |
+| PM-02   | Failed simulated payment | User on payment page | Enter invalid mock card details | Payment fails with error message |
+| PM-03   | Cancel payment midway | User on payment page | Start payment then cancel | System aborts payment and booking remains pending |
+| PM-04   | Retry after failed payment | User attempted invalid payment | Try again with valid mock details | Payment succeeds, booking confirmed |
+
+---
+
+## 6. API Integration (Flight Schedules)
 | Test ID | Test Case Description | Precondition | Steps | Expected Result |
 |---------|----------------------|--------------|-------|-----------------|
 | API-01  | Retrieve flight schedule successfully | API is available | Search for valid flight | System fetches and displays updated flight schedule |
@@ -55,7 +64,7 @@
 
 ---
 
-## 6. Negative & Edge Cases
+## 7. Negative & Edge Cases
 | Test ID | Test Case Description | Precondition | Steps | Expected Result |
 |---------|----------------------|--------------|-------|-----------------|
 | NE-01   | Enter numbers in name field | User on booking form | Enter digits in passenger name | System rejects invalid input |
