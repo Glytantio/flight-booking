@@ -1,36 +1,53 @@
+# Flight Booking System (Capstone Project)
+
 > ⚠️ **Disclaimer:**  
-> This Flight Booking Training System was developed as a **capstone project for academic and training purposes only**.  
-> It is **not an actual flight booking service**, and all data is limited to **local flights within the Philippines** using simulated and API-provided schedules.
+> This Flight Booking System was developed as a **capstone project** for **academic and training purposes only**.  
+> It is **not an actual flight booking service**.  
+> The system supports **local flights within the Philippines**, retrieves schedules through **third-party APIs**, and uses **simulated payment services**.  
+> International routes and real-world payment gateways are **not included**.
 
-# Flight Booking Training System (Capstone Project)
-
-This repository contains the **Test Documentation** for my Flight Booking System, developed as my **capstone project** during my academic years.  
-The focus is on **QA** such as test plans, manual test cases, and test design techniques.
+---
 
 ## 📌 Contents
-- `test-plan.md` → Defines the testing scope, objectives, and strategy.
-- `manual-test-cases.md` → Detailed manual test cases.
-- `automation/` → Placeholder for automated test scripts (future work).
-- `docs/` → Diagrams, workflows, and supporting documentation.
+- `test-plan.md` → Defines the testing scope, objectives, and strategy  
+- `manual-test-cases.md` → Detailed manual test cases (search, booking, payments, cancellations, APIs, edge cases)  
+- `automation/` → Placeholder for automated test scripts (future work)  
+- `docs/` → Diagrams, workflows, and supporting documentation  
+
+---
 
 ## 🛠 Tools & Techniques
-- Manual Testing (Markdown format)
-- Equivalence Partitioning & Boundary Value Analysis
-- Regression Testing
-- (Optional) Selenium for automation
+- Manual Testing (Markdown format)  
+- Test Case Design Techniques: Equivalence Partitioning, Boundary Value Analysis  
+- Regression Testing  
+- API Testing (flight schedules only)  
+- Payment Simulation Testing (mock cards, training-only)  
+
+---
 
 ## 🚀 Features Covered
-- Flight Search
-- Flight Booking
-- Payment Processing (simulated, **not actual payments**)
-- Ticket Generation
-- Cancellation & Refunds
+- Flight Search (local flights only)  
+- Flight Booking  
+- Ticket Generation  
+- Cancellation & Refund (training simulation only)  
+- Simulated Payment Services (no real transactions)  
+- API Integration for Flight Schedules  
 
+---
 
 ## 🌍 Scope of the System
-- ✅ Local Flights (Philippines only)
-- ❌ International Flights are **not included**
-- ✅ Integration with third-party APIs for:
-  - Flight schedules (arrival/departure times, availability)
+- ✅ Local Flights (Philippines only)  
+- ✅ API integration for flight schedules  
+- ✅ Simulated payments (mock card details only)  
+- ❌ International flights not supported  
+- ❌ No real payment gateways or financial transactions  
 
-📌 **Note:** This repository is **QA-focused**. The development repository (system implementation) can be found separately.
+---
+
+## 📂 Repository Structure
+flight-booking/ │── README.md                # Overview of the repo │── test-plan.md             # Strategy, scope, and objectives │── manual-test-cases.md     # Detailed manual test cases │── automation/              # (Optional) Placeholder for automation scripts │   └── README.md │── docs/                    # Supporting documentation (diagrams, flows, etc.) │   └── flight-booking-flow.png
+
+---
+
+📌 **Note:** This repository focuses on **QA artifacts** for the Flight Booking System.  
+The development (implementation) repository may be maintained separately.
