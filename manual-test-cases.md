@@ -4,7 +4,8 @@
 > The Flight Booking System was developed as a **capstone project** for **academic and training purposes only**.  
 > It is **not an actual flight booking service**.  
 > The system supports **local flights within the Philippines only**, and integrates with third-party APIs for **flight schedules**.  
-> International routes and payment services are **not included**.
+> International routes are **not included**.
+> Payment services are **simulated**.
 
 ---
 
