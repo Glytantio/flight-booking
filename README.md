@@ -51,17 +51,18 @@
 ## 📂 Repository Structure
 ```bash
 flight-booking/ 
-│── README.md                
+└── README.md                
 # Overview of the repo 
-│── test-plan.md             
+└── test-plan.md             
 # Strategy, scope, and objectives 
-│── manual-test-cases.md     
+└── manual-test-cases.md     
 # Detailed manual test cases 
-│── automation/              
+└── automation/              
 # (Optional) Placeholder for automation scripts │   └── README.md 
-│        │── docs/                    
+│        └── docs/                    
 # Supporting documentation (diagrams, flows, etc.) 
   └── flight-booking-flow.png
+```
 
 ---
 
