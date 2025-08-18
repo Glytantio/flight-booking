@@ -49,7 +49,19 @@
 ---
 
 ## 📂 Repository Structure
-flight-booking/ │── README.md                # Overview of the repo │── test-plan.md             # Strategy, scope, and objectives │── manual-test-cases.md     # Detailed manual test cases │── automation/              # (Optional) Placeholder for automation scripts │   └── README.md │── docs/                    # Supporting documentation (diagrams, flows, etc.) │   └── flight-booking-flow.png
+```bash
+flight-booking/ 
+│── README.md                
+# Overview of the repo 
+│── test-plan.md             
+# Strategy, scope, and objectives 
+│── manual-test-cases.md     
+# Detailed manual test cases 
+│── automation/              
+# (Optional) Placeholder for automation scripts │   └── README.md 
+│        │── docs/                    
+# Supporting documentation (diagrams, flows, etc.) 
+  └── flight-booking-flow.png
 
 ---
 
