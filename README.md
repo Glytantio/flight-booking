@@ -58,10 +58,10 @@ flight-booking/
 └── manual-test-cases.md     
 # Detailed manual test cases 
 └── automation/              
-# (Optional) Placeholder for automation scripts │   └── README.md 
-│        └── docs/                    
+# (Optional) Placeholder for automation scripts
+└── docs/                    
 # Supporting documentation (diagrams, flows, etc.) 
-  └── flight-booking-flow.png
+└── flight-booking-flow.png
 ```
 
 ---
